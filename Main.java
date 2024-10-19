@@ -1,14 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Carro carro = new Carro();
-        Moto moto = new Moto();
+        Gerente gerente = new Gerente("Roberto");
+        Desenvolvedor dev = new Desenvolvedor("Claudio");
 
-        carro.acelerar();
-        carro.frear();
+        System.out.println("Informções do gerente:");
+        System.out.println("nome: " + gerente.nome);
+        System.out.println("Função: " + gerente.descreverResponsabilidades());
+        System.out.println("Salário: " + gerente.calcularSalario());
+        System.out.println("------------------------");
+        System.out.println("Informações do desenvolvedor:");
+        System.out.println("nome: " + dev.nome);
+        System.out.println("Função: " + dev.descreverResponsabilidades());
+        System.out.println("Salário: " + dev.calcularSalario());
 
-        moto.acelerar();
-        moto.frear();
-        moto.embreagem();
-    
     }
 }
